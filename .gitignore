@@ -4,7 +4,8 @@
 *.scss.map
 
 
-
+package-lock.json*
+package.json*
 
 # Node.js
 node_modules/
