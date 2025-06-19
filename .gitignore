@@ -6,7 +6,7 @@
 
 package-lock.json*
 package.json*
-
+icons/
 assets/
 # Node.js
 node_modules/
