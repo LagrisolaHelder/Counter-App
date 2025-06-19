@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Countoo</string>
+    <string name="title_activity_main">Countoo</string>
+    <string name="package_name">com.countoo.app</string>
+    <string name="custom_url_scheme">com.countoo.app</string>
+</resources>
