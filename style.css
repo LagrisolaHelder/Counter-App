@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Satoshi", sans-serif;
   color: white;
@@ -8,58 +8,73 @@
 
 html {
   scrollbar-width: none;
+  font-size: 100%; /* Base font size: 16px = 1rem */
 }
 
 body {
   background-color: royalblue;
-  padding: 0 20px;
+  padding: 0 1.25rem; /* 20px */
 }
 
+/* Navigation Bar */
 .nav {
   position: fixed;
-  padding: 20px;
-  position: fixed;
+  padding: 1.25rem;
   width: 100%;
 }
+
 .nav #logo h1 {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 2rem); /* responsive font */
 }
 
+/* Main container */
 .container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
   flex-direction: column;
   height: 50vh;
 }
-.container .search {
+
+/* Search Box */
+.search {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   position: fixed;
   text-align: center;
 }
-.container .search h2 {
-  font-size: 1.3rem;
-}
-.container .search input {
-  color: black;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid rgb(255, 255, 255);
-}
-.container .search button {
-  background-color: rgb(32.5909090909, 76.0454545455, 206.4090909091);
-  border-radius: 5px;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-size: 0.9rem;
+
+.search h2 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
+.search input {
+  color: black;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+  border: 1px solid white;
+}
+
+.search button {
+  background-color: #3a5fcf; /* Darkened royalblue */
+  border-radius: 0.3125rem;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #2f4fb2;
+}
+
+/* Result Section */
 .result {
   display: flex;
   justify-content: center;
@@ -68,7 +83,15 @@ body {
   align-items: center;
   text-align: center;
 }
-.result .weatherResult {
+
+.weatherResult {
   width: -moz-fit-content;
   width: fit-content;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+footer {
+  text-align: center;
+  padding: 1.25rem 0;
+  background-color: #2f4fb2; /* Darkened royalblue */
 }/*# sourceMappingURL=style.css.map */
