@@ -1,0 +1,91 @@
+ * {
+   margin: 0;
+   padding: 0%;
+   box-sizing: border-box;
+   font-family: 'Satoshi', sans-serif;
+   color: white;
+
+
+ }
+ html{
+  scrollbar-width: none;
+
+ }
+
+
+ body{
+  background-color: royalblue;
+  padding: 0 20px;
+ }
+
+
+ .nav{
+  position: fixed;
+  padding: 20px;
+
+  position: fixed;
+  width: 100%;
+  #logo{
+    
+    h1{
+ 
+      font-size: 1.5rem;
+    }
+  }
+ }
+
+
+ .container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+   
+  height: 50vh;
+.search{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+ text-align: center;
+    h2{
+    font-size: 1.3rem;
+  }
+  input{
+    color: black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+
+  }
+  button{
+    background-color: darken($color: royalblue, $amount: 10%);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.9rem;
+  }
+}
+
+ }
+
+ .result{
+  display: flex;
+  justify-content: center;
+ 
+ 
+ 
+  width: 100%;
+ 
+  height:10vh;
+  align-items: center;
+  text-align: center;
+  .weatherResult{
+    width: fit-content;
+     
+  }
+ }
