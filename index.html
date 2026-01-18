@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App With Js</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head> 
+<body >
+    
+    <!-- Counter App -->
+   <div class="h-screen max-w-md mx-auto flex flex-col justify-center items-center gap-6 ">
+
+
+    <div class="h-fit bg-white p-4 shadow-xs flex justify-center flex-col gap-1 items-center">
+        <h1 class="text-2xl font-thin text-gray-600">Counter App With <b class="font-semibold text-yellow-500">JavaScript</b></h1>
+        <br>
+        <span class="text-6xl">0</span>
+        <div class="gap-4 flex  mt-4  font-thin  justify-center items-center ">
+             <button id="buttonSubtract" class="text-center  text-5xl px-5 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                -
+            </button>
+            <button id="buttonAdd" class="text-center text-5xl px-5 py-2 border border-gray-300 rounded-lg hover:bg-gray-100">
+                +
+            </button>
+
+
+           
+        </div>
+        </div>
+
+
+
+
+
+   </div>
+<script>
+    // Select elements
+    const buttonAdd = document.getElementById('buttonAdd');
+    const buttonSubtract = document.getElementById('buttonSubtract');
+    const counterDisplay = document.querySelector('span');
+
+    // Initialize counter
+    let counter = 0;
+
+    // Update display function
+    function updateDisplay() {
+        counterDisplay.textContent = counter;
+    }
+
+    // Event listeners
+    buttonAdd.addEventListener('click', () => {
+        counter++;
+        updateDisplay();
+    });
+
+    buttonSubtract.addEventListener('click', () => {
+        counter--;
+        updateDisplay();
+    });
+</script>
+</body>
+</html>
